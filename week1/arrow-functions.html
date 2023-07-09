@@ -48,6 +48,12 @@
         const mouseOverFunction = (el) => {
             el.style = "background-color: black";
         }
+        
+        const setColorParagraph = document.getElementById("set-color");
+setColorParagraph.addEventListener("click", () => {
+    const colorInput = document.getElementById("color-input").value;
+    setBackgroundColorById("body", colorInput);
+  });
     </script>
 </body>
 </html>
